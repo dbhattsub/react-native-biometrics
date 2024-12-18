@@ -15,6 +15,7 @@ interface IsSensorAvailableResult {
   available: boolean
   biometryType?: BiometryType
   error?: string
+  errorCode?: number
 }
 
 interface CreateKeysResult {
@@ -39,6 +40,7 @@ interface CreateSignatureResult {
   success: boolean
   signature?: string
   error?: string
+  errorCode?: number | string
 }
 
 interface SimplePromptOptions {
@@ -50,6 +52,7 @@ interface SimplePromptOptions {
 interface SimplePromptResult {
   success: boolean
   error?: string
+  errorCode?: number | string
 }
 
 /**
